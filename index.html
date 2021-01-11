@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC Project #2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Venezuelan Music Survey</h1>
+        <p id="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A, consequuntur.
+        </p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Nombre
+					<input
+						type="text"
+						name="nombre"
+						id="name"
+						placeholder="Ingresa tu nombre"
+						required
+						class="form-control"
+				/></label>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Correo
+					<input
+						type="email"
+						name="correo"
+						id="email"
+						placeholder="Ingresa tu correo electrónico"
+						required
+						class="form-control"
+				/></label>
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">Edad (opcional)
+					<input
+						type="number"
+						name="edad"
+						id="number"
+						min="10"
+						max="100"
+						placeholder="Edad"
+						class="form-control"
+				/></label>
+        </div>
+        <!-- Generos -->
+        <div class="form-group">
+            <label>¿Que genero músical es tu favorito?
+					<select name="generos" id="dropdown" class="form-control">
+						<option value="Rock">Rock</option>
+						<option value="Llanero">Llanero</option>
+						<option value="Gaitas">Gaitas</option>
+						<option value="Rap">Rap</option>
+						<option value="Reggaeton">Reggaeton</option>
+						<option value="Otro">Otro</option>
+					</select>
+				</label>
+        </div>
+
+        <!-- Radio buttons -->
+        <div class="form-group">
+            <p>¿Recomendarias música venezolana a un amigo?</p>
+            <br />
+            <label><input
+						class="radio-check"
+						type="radio"
+						name="choices"
+						checked
+						value="yes"
+					/>Si
+				</label>
+            <br /><br />
+            <label><input
+						class="radio-check"
+						type="radio"
+						name="choices"
+						value="no"
+					/>No
+				</label>
+            <br /><br />
+            <label><input
+						class="radio-check"
+						type="radio"
+						name="choices"
+						value="maybe"
+					/>Tal vez
+				</label>
+            <br /><br />
+        </div>
+
+        <!-- Bandas -->
+        <div class="form-group">
+            <p>¿Que bandas recomendarias?</p>
+            <br />
+            <label><input
+						class="radio-check"
+						type="checkbox"
+						name="bands"
+						value="Los Mesoneros"
+					/>Los Mesoneros
+				</label>
+            <br /><br />
+            <label><input
+						class="radio-check"
+						type="checkbox"
+						name="bands"
+						value="La Vida Boheme"
+					/>La Vida Boheme
+				</label>
+            <br /><br />
+            <label><input
+						class="radio-check"
+						type="checkbox"
+						name="bands"
+						value="Arawato"
+					/>Arawato
+				</label>
+            <br /><br />
+            <label><input
+						class="radio-check"
+						type="checkbox"
+						name="bands"
+						value="Viniloversus"
+					/>Viniloversus
+				</label>
+            <br /><br />
+            <label><input
+						class="radio-check"
+						type="checkbox"
+						name="bands"
+						value="Charliepapa"
+					/>Charliepapa
+				</label>
+            <br /><br />
+            <label><input
+						class="radio-check"
+						type="checkbox"
+						name="bands"
+						value="Tomates Fritos"
+					/>Tomates Fritos
+				</label>
+            <br /><br />
+        </div>
+
+        <!-- Comentarios -->
+        <div class="form-group">
+            <p>Comentarios adicionales</p>
+            <textarea name="comentarios" cols="30" rows="10" placeholder="Ingresa tu comentario aqui..." id="text-area"></textarea>
+        </div>
+        <!-- Submit -->
+        <div class="form-group">
+            <input type="submit" value="Enviar " id="submit" class="form-control" />
+        </div>
+    </form>
+</body>
+
+</html>
